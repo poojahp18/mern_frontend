@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Button from "./components/Button";
+import Input from "./components/Input";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -18,6 +20,8 @@ function App() {
     <>
       <div>
         <h1>{message}</h1>
+        <Input />
+        <Button>Click me</Button>
       </div>
     </>
   );
